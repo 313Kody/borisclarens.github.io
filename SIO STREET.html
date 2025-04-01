@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SIO Street - Site Officiel</title>
+        <link rel="stylesheet" href="">
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/CSS-style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="Menu.html" target="_blank">Menu</a></li>
+                    <li><a href="Burger.html" target="_blank">Burger</a></li>
+                    <li><a href="Wrap.html" target="_blank">Wrap</a></li>
+                    <li><a href="Accompagnement.html" target="_blank">Accompagnement</a></li>
+                    <li><a href="Petite-Faim.html" target="_blank">Petite Faim</a></li>
+                </ul>
+            </nav>
+        </header>
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required aria-required="true" placeholder="Entrez votre prénom">
+            <small id="prenom-desc">Le prénom doit être composé de lettres uniquement.</small>
+
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required aria-required="true" placeholder="Entrez votre nom" aria-describedby="nom-desc">
+            <small id="nom-desc">Le nom doit être composé de lettres uniquement.</small>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required aria-required="true" placeholder="Exemple : vous@exemple.com">
+            <small id="email-desc">L'email doit être composé de lettres, d'un arobase, et se termine par un point COM. Les chiffres sont facultatifs</small>
+
+            <label for="date_naissance">Date de naissance :</label>
+            <input type="date" id="date_naissance" name="date_naissance" required aria-required="true">
+            <small id="date_naissance">Ecrire la date de naissance uniquement avec les chiffres</small>
+
+            <label for="genre">Genre :</label>
+            <select id="genre" name="genre" aria-label="Choisissez votre genre">
+                <option value="homme">Homme</option>
+                <option value="femme">Femme</option>
+                <option value="autre">Autre</option>
+            </select>
+
+        </fieldset>
+        <button type="submit" aria-label="Soumettre le formulaire">Soumettre</button>
+        <section class="titre">
+            <h1>Les différents restaurants de SIO Street</h1>
+            <article>
+                <p>Découvrez les restaurants de SIO Street partout en France, avec des prix attractifs et des produits de qualité. Une viande française pour nos burgers, sélectionnée par nos chefs cuisiniers d'exception, en collaboration avec le duo des célèbres influenceuse Diana & Ilona Recette !</p>
+                <p>C'est une entrée de gamme dans la gastronomie de la street food, avec des prix allant de 30 à 400 euros pour les menus les plus réputés dans le monde de la food !</p>
+                <p>Je sais que je vous fais saliver derrière votre écran, c'est pourquoi les livraisons via des applications tierces comme UberEats et Deliveroo sont disponibles uniquement dans le 94, 91 et Paris.</p>
+                <p>Bon appétit !</p>
+            </article>
+            <button type="button" id="alert-trigger">
+                Attention !
+              </button>
+              <div id="example" role="alert"></div>
+              <script>
+                document.getElementById('alert-trigger').addEventListener('click', function() {
+                    document.getElementById('example').innerText;
+                });
+            </script>
+                <p>"Nos poulets sont si tendres qu'ils vous rendront trop fort en PHP !!!"</p>
+            <ol>
+                <li>
+                    <a href="../SIO Street/IMG/SIO STREET 1.jpeg" target="_blank">
+                        <img src="../SIO STREET/IMG/SIO STREET 1.jpeg" alt="SIO Street de Paris 14e">
+                    </a> Paris 14e
+                </li>
+                <li>
+                    <a href="/SIO Street/IMG/SIO STREET 2.jpeg" target="_blank">
+                        <img src="../SIO STREET/IMG/SIO STREET 2.jpeg" alt="SIO Street d'Évry-Courcouronnes">
+                    </a> Évry-Courcouronnes
+                </li>
+                <li>
+                    <a href="../SIO Street/IMG/SIO STREET 3.jpeg" target="_blank">
+                        <img src="../SIO STREET/IMG/SIO STREET 3.jpeg" alt="SIO Street d'Asnières-sur-Seine">
+                    </a> Asnières-sur-Seine
+                </li>
+                <li>
+                    <a href="../SIO Street/IMG/SIO STREET 4.jpeg" target="_blank">
+                        <img src="../SIO STREET/IMG/SIO STREET 4.jpeg" alt="SIO Street de Maisons-Alfort">
+                    </a> Maisons-Alfort
+                </li>
+            </ol>
+        </section>
+
+        <div>
+            <blockquote cite="https://www.radiofrance.fr/mouv/kaaris-raconte-le-jour-ou-future-a-pleure-pour-un-poulet-braise-2186771">
+                <p>« Il a fondu en larmes sur le poulet. Il pleurait quasiment. Il mangeait le poulet et n'avait plus de force. Il demandait : "C'est quoi ce poulet ?!" »</p>
+            </blockquote>
+            <p>— Kaaris, <cite>Radio France</cite></p>
+
+            <p>Et puis, si vous cherchez une bonne raison pour manger du poulet :</p>
+            <q cite="https://citation-celebre.leparisien.fr/citation/poulet#google_vignette">
+                « Pour manger un poulet, il vaut mieux être deux : le poulet et moi. »
+            </q>
+        </div>
+
+        <footer>
+            <p>Copyright © 2025 SIO Street. Tous droits réservés.<br/>
+                Pour votre santé, pratiquez une activité physique régulière : <a href="https://www.mangerbouger.fr" target="_blank">www.mangerbouger.fr</a><br/>
+                Nous contacter : <a href="mailto:siostreet@gmail.com">siostreet@gmail.com</a><br/>
+                Siège social : 64 Boulevard Brune
+            </p>
+        </footer>
+    </body>
+</html>
